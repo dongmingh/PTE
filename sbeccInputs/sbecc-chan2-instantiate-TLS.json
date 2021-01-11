@@ -1,0 +1,25 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "sbe_cc",
+    "chaincodeVer": "v0",
+    "transType": "instantiate",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name":  "testorgschannel2",
+        "action":  "create",
+        "orgName": [
+            "org3"
+        ]
+    },
+    "timeoutOpt": {
+        "preConfig": "120000",
+        "request": "180000"
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-test/chaincodes/sbe/go",
+        "fcn": "init",
+        "language": "golang",
+        "args": []
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

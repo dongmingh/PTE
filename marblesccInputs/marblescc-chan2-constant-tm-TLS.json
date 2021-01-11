@@ -1,0 +1,55 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "marbles_cc",
+    "chaincodeVer": "v0",
+    "logLevel": "ERROR",
+    "invokeCheck": "TRUE",
+    "transMode": "Constant",
+    "transType": "Invoke",
+    "invokeType": "Move",
+    "targetPeers": "OrgAnchor",
+    "nProcPerOrg": "1",
+    "nRequest": "1000",
+    "runDur": "600",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel2",
+        "action":  "create",
+        "orgName": [
+            "org3",
+            "org4"
+        ]
+    },
+    "constantOpt": {
+        "constFreq": "0",
+        "devFreq": "0"
+    },
+    "eventOpt": {
+        "type": "FilteredBlock",
+        "timeout": "300000"
+    },
+    "ccType": "marblescc",
+    "ccOpt": {
+        "keyIdx": [0],
+        "keyPayLoad": [],
+        "keyStart": "0",
+        "payLoadMin": "1024",
+        "payLoadMax": "1024"
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-test/chaincodes/marbles02/go",
+        "fcn": "init",
+        "args": []
+    },
+    "invoke": {
+        "query": {
+            "fcn": "readMarble",
+            "args": ["marble"]
+        },
+        "move": {
+            "fcn": "transferMarble",
+            "args": ["marble", "jerry"]
+        }
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

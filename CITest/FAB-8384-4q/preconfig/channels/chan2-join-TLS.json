@@ -1,0 +1,18 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "sample_js",
+    "chaincodeVer": "v0",
+    "logLevel": "ERROR",
+    "transType": "Channel",
+    "nProcPerOrg": "1",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel2",
+        "action":  "join",
+        "orgName": [
+            "org1",
+            "org2"
+        ]
+    },
+    "ConnProfilePath": "CITest/CIConnProfiles/test-network"
+}

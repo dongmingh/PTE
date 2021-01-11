@@ -1,0 +1,13 @@
+{
+    "txCfgPtr": "runPTE/TXopt.json",
+    "ccDfnPtr": "runPTE/_CHAINCODEID_DfnOpt.json",
+    "channelID": "_CHANNELID_",
+    "chaincodeID": "_CHAINCODEID_",
+    "chaincodeVer": "v0",
+    "channelOpt": {
+        "name": "_CHANNELNAME_",
+        "orgName": [
+        ]
+    },
+    "ConnProfilePath": "_CPDIRECTORY_"
+}

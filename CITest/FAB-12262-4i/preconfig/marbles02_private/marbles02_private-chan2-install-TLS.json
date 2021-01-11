@@ -1,0 +1,24 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "marbles02_private_go",
+    "chaincodeVer": "v0",
+    "transType": "install",
+    "nProcPerOrg": "1",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name":  "testorgschannel2",
+        "action":  "create",
+        "orgName": [
+            "org1",
+            "org2"
+
+        ]
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-test/chaincodes/marbles02_private/go",
+        "metadataPath": "github.com/hyperledger/fabric-tes/chaincodes/marbles02_private/go/META-INF",
+        "fcn": "init",
+        "args": []
+    },
+    "ConnProfilePath": "CITest/CIConnProfiles/test-network"
+}

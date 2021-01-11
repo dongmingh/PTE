@@ -1,0 +1,43 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "sbe_cc",
+    "chaincodeVer": "v0",
+    "logLevel": "ERROR",
+    "invokeCheck": "TRUE",
+    "transMode": "Constant",
+    "transType": "Invoke",
+    "invokeType": "Query",
+    "targetPeers": "OrgAnchor",
+    "nProcPerOrg": "1",
+    "nRequest": "1000",
+    "runDur": "1200",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel2",
+        "action":  "create",
+        "orgName": [
+            "org3",
+            "org4"
+        ]
+    },
+    "constantOpt": {
+        "constFreq": "0",
+        "devFreq": "0"
+    },
+    "ccType": "sbecc",
+    "ccOpt": {
+        "keyIdx": [0],
+        "keyStart": "0"
+    },
+    "invoke": {
+        "query": {
+            "fcn": "getRecord",
+            "args": ["key"]
+        },
+        "move": {
+            "fcn": "updateRecordVal",
+            "args": ["key","200"]
+        }
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

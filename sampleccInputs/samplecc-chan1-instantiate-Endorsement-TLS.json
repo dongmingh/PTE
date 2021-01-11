@@ -1,0 +1,35 @@
+{
+    "channelID": "_ch1",
+    "chaincodeID": "sample_cc",
+    "chaincodeVer": "v0",
+    "transType": "instantiate",
+    "nProcPerOrg": "1",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name":  "testorgschannel1",
+        "action":  "create",
+        "orgName": [
+            "org1",
+            "org2"
+        ]
+    },
+    "timeoutOpt": {
+        "preConfig": "120000",
+        "request": "180000"
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-sdk-node/test/fixtures/src/github.com/sample_cc",
+        "fcn": "init",
+         "endorsement": {
+                       "identities": [
+                        { "role": { "name": "peer", "mspId": "PeerOrg1" }},
+                        { "role": { "name": "peer", "mspId": "PeerOrg2" }}
+                           ],
+                       "policy": {
+                          "2-of": [{ "signed-by": 0 }, { "signed-by": 1 }]
+                         }
+                      },
+        "args": []
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

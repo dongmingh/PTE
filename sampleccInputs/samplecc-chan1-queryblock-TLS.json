@@ -1,0 +1,18 @@
+{
+    "transType": "QueryBlock",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel1",
+        "channelTX": "github.com/hyperledger/fabric-test/fabric/internal/cryptogen/crypto-config/ordererOrganizations/testorgschannel1.tx",
+        "action":  "create",
+        "orgName": [
+            "org1"
+        ]
+    },
+    "queryBlockOpt": {
+        "org1":  ["peer0org1examplecom"],
+        "startBlock":  "0",
+        "endBlock":  "10"
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

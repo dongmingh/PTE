@@ -1,0 +1,22 @@
+{
+    "channelID": "_ch4",
+    "chaincodeID": "sbe_cc",
+    "chaincodeVer": "v0",
+    "transType": "install",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name":  "testorgschannel4",
+        "action":  "create",
+        "orgName": [
+            "org3",
+            "org4"
+        ]
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-test/chaincodes/sbe/go",
+        "fcn": "init",
+        "language": "golang",
+        "args": []
+    },
+    "ConnProfilePath": "CITest/CIConnProfiles/test-network"
+}

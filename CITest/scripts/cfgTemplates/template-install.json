@@ -1,0 +1,21 @@
+{
+    "channelID": "_CHANNELID_",
+    "chaincodeID": "_CHAINCODEID_",
+    "chaincodeVer": "v0",
+    "transType": "install",
+    "TLS": "_TLS_",
+    "channelOpt": {
+        "name":  "_CHANNELNAME_",
+        "action":  "create",
+        "orgName": [
+        ]
+    },
+    "deploy": {
+        "chaincodePath": "_CHAINCODEPATH_",
+        "metadataPath": "_METADATAPATH_",
+        "language": "_LANGUAGE_",
+        "fcn": "init",
+        "args": []
+    },
+    "ConnProfilePath": "_CPDIRECTORY_"
+}

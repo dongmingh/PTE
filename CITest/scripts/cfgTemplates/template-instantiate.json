@@ -1,0 +1,24 @@
+{
+    "channelID": "_CHANNELID_",
+    "chaincodeID": "_CHAINCODEID_",
+    "chaincodeVer": "v0",
+    "transType": "instantiate",
+    "TLS": "_TLS_",
+    "channelOpt": {
+        "name":  "_CHANNELNAME_",
+        "action":  "create",
+        "orgName": [
+        ]
+    },
+    "timeoutOpt": {
+        "preConfig": "600000",
+        "request": "600000"
+    },
+    "deploy": {
+        "chaincodePath": "_CHAINCODEPATH_",
+        "language": "_LANGUAGE_",
+        "fcn": "init",
+        "args": []
+    },
+    "ConnProfilePath": "_CPDIRECTORY_"
+}

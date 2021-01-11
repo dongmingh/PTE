@@ -1,0 +1,15 @@
+{
+    "channelID": "_ch4",
+    "transType": "Channel",
+    "nProcPerOrg": "1",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel4",
+        "action":  "join",
+        "orgName": [
+            "org3",
+            "org4"
+        ]
+    },
+    "ConnProfilePath": "CITest/CIConnProfiles/test-network"
+}

@@ -1,0 +1,14 @@
+{
+    "transType": "Channel",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel1",
+        "action":  "join",
+        "orgName": [
+            "org1",
+            "org2",
+            "org3"
+        ]
+    },
+    "ConnProfilePath": "ConnProfiles/privateDB"
+}

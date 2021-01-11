@@ -1,0 +1,22 @@
+{
+    "channelID": "_ch2",
+    "chaincodeID": "sample_js",
+    "chaincodeVer": "v0",
+    "transType": "install",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name":  "testorgschannel2",
+        "action":  "create",
+        "orgName": [
+            "org3",
+            "org4"
+        ]
+    },
+    "deploy": {
+        "chaincodePath": "github.com/hyperledger/fabric-test/chaincodes/samplecc/node",
+        "fcn": "init",
+        "language": "node",
+        "args": []
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

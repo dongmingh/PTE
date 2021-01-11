@@ -1,0 +1,13 @@
+{
+    "transType": "Channel",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel3",
+        "action":  "join",
+        "orgName": [
+            "org5",
+            "org6"
+        ]
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

@@ -1,0 +1,15 @@
+{
+    "channelID": "_ch4",
+    "transType": "Channel",
+    "nProcPerOrg": "1",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel4",
+        "channelTX": "github.com/hyperledger/fabric-test/fabric/internal/cryptogen/channel-artifacts/testorgschannel4.tx",
+        "action":  "create",
+        "orgName": [
+            "org3"
+        ]
+    },
+    "ConnProfilePath": "CITest/CIConnProfiles/test-network"
+}

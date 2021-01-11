@@ -1,0 +1,56 @@
+{
+    "channelID": "_ch3",
+    "chaincodeID": "sample_js",
+    "chaincodeVer": "v0",
+    "logLevel": "ERROR",
+    "invokeCheck": "TRUE",
+    "transMode": "Constant",
+    "transType": "Invoke",
+    "invokeType": "Move",
+    "targetPeers": "OrgAnchor",
+    "peerFailover": "TRUE",
+    "ordererFailover": "TRUE",
+    "nProcPerOrg": "1",
+    "nRequest": "1000",
+    "runDur": "600",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel3",
+        "action":  "create",
+        "orgName": [
+            "org5",
+            "org6"
+        ]
+    },
+    "constantOpt": {
+        "constFreq": "0",
+        "devFreq": "0"
+    },
+    "eventOpt": {
+        "type": "FilteredBlock",
+        "timeout": "240000"
+    },
+    "failoverOpt": {
+        "method": "RoundRobin",
+        "list": "targetPeers"
+    },
+    "ccType": "ccchecker",
+    "ccOpt": {
+        "keyIdx": [1],
+        "keyPayLoad": [2],
+        "keyStart": "0",
+        "payLoadMin": "1024",
+        "payLoadMax": "1024"
+    },
+    "invoke": {
+        "query": {
+            "fcn": "invoke",
+            "args": ["get", "a1"]
+        },
+        "move": {
+            "fcn": "invoke",
+            "args": ["put", "a1","1"]
+        }
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}

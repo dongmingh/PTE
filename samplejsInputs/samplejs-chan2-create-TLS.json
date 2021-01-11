@@ -1,0 +1,13 @@
+{
+    "transType": "Channel",
+    "TLS": "enabled",
+    "channelOpt": {
+        "name": "testorgschannel2",
+        "channelTX": "github.com/hyperledger/fabric-test/fabric/internal/cryptogen/crypto-config/ordererOrganizations/testorgschannel2.tx",
+        "action":  "create",
+        "orgName": [
+            "org3"
+        ]
+    },
+    "ConnProfilePath": "ConnProfiles/test-network"
+}
